@@ -46,8 +46,8 @@ void MainWindow::on_day_actionTriggered(int action)
 {
     ui->bye_number->clear();
     ui->hi_number->clear();
-
-
+    i++;
+    j++;
     QString dst_hi=QString::number(j);
     QString dst_bye=QString::number(i);
 
