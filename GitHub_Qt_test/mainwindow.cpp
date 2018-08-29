@@ -15,5 +15,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->lineEdit->setText("hello world");
+    ui->lineEdit->setText("see you");
 }
