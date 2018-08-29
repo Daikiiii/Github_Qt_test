@@ -13,7 +13,14 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_bye_clicked()
 {
+    ui->lineEdit->clear();
     ui->lineEdit->setText("see you");
+}
+
+void MainWindow::on_hi_clicked()
+{
+    ui->lineEdit->clear();
+    ui->lineEdit->setText("hello");
 }

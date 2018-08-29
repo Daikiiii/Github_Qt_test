@@ -24,17 +24,30 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="bye">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>100</y>
+      <x>20</x>
+      <y>80</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>Push</string>
+     <string>bye</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hi">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>80</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>hi</string>
     </property>
    </widget>
   </widget>
