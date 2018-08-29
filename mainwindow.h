@@ -23,6 +23,8 @@ private slots:
 
     void on_day_actionTriggered(int action);
 
+    void on_liset_button_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

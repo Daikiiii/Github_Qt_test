@@ -79,3 +79,17 @@ void MainWindow::on_day_actionTriggered(int action)
             ui->lineEdit->setText("Nice tomeet you");
     }
 }
+
+void MainWindow::on_liset_button_clicked()
+{
+    ui->bye_number->clear();
+    ui->hi_number->clear();
+    i=0;
+    j=0;
+
+    QString dst_hi=QString::number(j);
+    QString dst_bye=QString::number(i);
+
+    ui->hi_number->append(dst_hi);
+    ui->bye_number->append(dst_bye);
+}
