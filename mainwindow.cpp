@@ -5,7 +5,7 @@
 #include<time.h>
 
 
-int i=0,j=0,day=0;
+int i=0,j=0,day=0,a;
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -37,6 +37,7 @@ void MainWindow::on_bye_clicked()
     }
     QString dst=QString::number(i);
     ui->bye_number->append(dst);
+    check_draw();
 }
 
 void MainWindow::on_hi_clicked()
@@ -55,7 +56,7 @@ void MainWindow::on_hi_clicked()
 
     QString dst=QString::number(j);
     ui->hi_number->append(dst);
-
+    check_draw();
 }
 
 void MainWindow::on_day_actionTriggered(int action)
@@ -78,6 +79,7 @@ void MainWindow::on_day_actionTriggered(int action)
     {
             ui->lineEdit->setText("Nice tomeet you");
     }
+    check_draw();
 }
 
 void MainWindow::on_liset_button_clicked()
@@ -92,4 +94,36 @@ void MainWindow::on_liset_button_clicked()
 
     ui->hi_number->append(dst_hi);
     ui->bye_number->append(dst_bye);
+    check_draw();
+}
+void MainWindow::on_spinBox_valueChanged(const QString &arg1)
+{
+    ui->bye_number->clear();
+    ui->hi_number->clear();
+    a=arg1.toInt();
+    ui->spinBox->setValue(a);
+    i=i+a;
+    j=j+a;
+    QString dst_hi=QString::number(j);
+    QString dst_bye=QString::number(i);
+
+    ui->hi_number->append(dst_hi);
+    ui->bye_number->append(dst_bye);
+    check_draw();
+}
+    void MainWindow::check_draw()
+{
+    if(i>j)
+    {
+        ui->compare->setText(">");
+    }
+    else if(i<j)
+    {
+        ui->compare->setText("<");
+    }
+    else
+    {
+            ui->lineEdit->setText("Nice tomeet you");
+            ui->compare->setText("=");
+    }
 }

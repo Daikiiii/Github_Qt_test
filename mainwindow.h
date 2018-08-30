@@ -14,7 +14,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+    void check_draw();
 
 private slots:
     void on_bye_clicked();
@@ -24,6 +24,7 @@ private slots:
     void on_day_actionTriggered(int action);
 
     void on_liset_button_clicked();
+    void on_spinBox_valueChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
