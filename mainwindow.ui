@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>387</width>
-    <height>342</height>
+    <width>680</width>
+    <height>305</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>130</y>
-      <width>360</width>
+      <x>20</x>
+      <y>120</y>
+      <width>300</width>
       <height>21</height>
      </rect>
     </property>
@@ -30,10 +30,10 @@
    <widget class="QPushButton" name="bye">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>10</y>
-      <width>93</width>
-      <height>28</height>
+      <width>100</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
@@ -43,10 +43,10 @@
    <widget class="QPushButton" name="hi">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>220</x>
       <y>10</y>
-      <width>93</width>
-      <height>28</height>
+      <width>100</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
@@ -56,7 +56,7 @@
    <widget class="QTextEdit" name="bye_number">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>45</x>
       <y>60</y>
       <width>51</width>
       <height>41</height>
@@ -66,7 +66,7 @@
    <widget class="QTextEdit" name="hi_number">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>245</x>
       <y>60</y>
       <width>51</width>
       <height>41</height>
@@ -76,8 +76,8 @@
    <widget class="QDial" name="day">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>50</y>
+      <x>145</x>
+      <y>40</y>
       <width>50</width>
       <height>64</height>
      </rect>
@@ -86,10 +86,10 @@
    <widget class="QPushButton" name="liset_button">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>170</y>
-      <width>93</width>
-      <height>28</height>
+      <x>120</x>
+      <y>150</y>
+      <width>100</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="text">
@@ -99,20 +99,39 @@
    <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>240</y>
-      <width>43</width>
-      <height>22</height>
+      <x>145</x>
+      <y>190</y>
+      <width>60</width>
+      <height>30</height>
      </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="compare">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>145</x>
       <y>10</y>
-      <width>113</width>
-      <height>21</height>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>290</width>
+      <height>236</height>
      </rect>
     </property>
    </widget>
@@ -122,7 +141,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>387</width>
+     <width>680</width>
      <height>26</height>
     </rect>
    </property>
